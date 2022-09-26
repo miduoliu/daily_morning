@@ -161,14 +161,14 @@ data = {
   },
 }
 
-for index, aim_date in enumerate(split_birthday()):
-  key_name = "birthday_left"
-  if index != 0:
-    key_name = key_name + "_%d" % index
-  data[key_name] = {
-    "value": get_counter_left(aim_date),
-    "color": get_random_color()
-  }
+# for index, aim_date in enumerate(split_birthday()):
+#   key_name = "birthday_left"
+#   if index != 0:
+#     key_name = key_name + "_%d" % index
+#   data[key_name] = {
+#     "value": get_counter_left(aim_date),
+#     "color": get_random_color()
+#   }
 
 if __name__ == '__main__':
   try:
