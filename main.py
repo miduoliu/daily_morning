@@ -81,11 +81,13 @@ def get_counter_left(aim_date):
 
 # 彩虹屁 接口不稳定，所以失败的话会重新调用，直到成功
 def get_words():
-  # OpenRefactory Warning: The 'requests.get' method does not use any 'timeout' threshold which may cause program to hang indefinitely.
-  words = requests.get("https://api.shadiao.pro/chp", timeout=100)
-  if words.status_code != 200:
-    return get_words()
-  return words.json()['data']['text']
+#   # OpenRefactory Warning: The 'requests.get' method does not use any 'timeout' threshold which may cause program to hang indefinitely.
+#   words = requests.get("https://api.shadiao.pro/chp", timeout=100)
+#   if words.status_code != 200:
+#     return get_words()
+#   return words.json()['data']['text']
+  word = "Good morning bb! The sun is so shining, the cloud is so white. New day to loveya ~"
+  return word;
 
 def format_temperature(temperature):
   return math.floor(temperature)
